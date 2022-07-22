@@ -28,6 +28,7 @@ body {
 /* Contenedor principal que estara en el centro de pantalla */
 .contenedor-flex {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -49,7 +50,7 @@ body {
 
 .losion-img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .tarjeta-img-movil{
@@ -134,14 +135,26 @@ body {
   margin-right: 10px;
 }
 
+.attribution {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+
+.attribution a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: blue;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
   .contenedor-flex{
-    padding: 0 20px;
+    height: 110vh;
   }
-  
+   
   .tarjeta{
     display: flex;
     flex-direction: column;
@@ -166,5 +179,10 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  .attribution {
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
 
 }
