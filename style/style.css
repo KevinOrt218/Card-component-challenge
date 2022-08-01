@@ -152,8 +152,7 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .contenedor-flex{
-    padding: 0 20px;
-    height: auto;
+    height: 100%;
   }
 
   .tarjeta {
